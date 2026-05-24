@@ -16,16 +16,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/919589644642?text=Hi%20VibeShow!%20I%20want%20to%20know%20more%20about%20your%20services." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-        <span>💬</span>
+    <a href="https://wa.me/919589644642?text=Hi%20VibeShow!%20I%20want%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <span class="whatsapp-dot"></span>
+        <span>WhatsApp</span>
     </a>
 
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="container">
-            <a href="/" class="logo">
+        <div class="container nav-container">
+            <a href="/" class="logo" aria-label="VibeShow home">
                 <span class="logo-mark">✦</span>
                 <span class="logo-text">Vibe<span class="text-accent">Show</span></span>
             </a>
@@ -36,553 +34,289 @@
                 <a href="#works" class="nav-link">Our Work</a>
                 <a href="#contact" class="btn btn-primary btn-sm">Contact</a>
             </div>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-glow hero-glow-1"></div>
-        <div class="hero-glow hero-glow-2"></div>
-        <div class="hero-grid"></div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge reveal">Trusted by Businesses Across India</div>
-                <h1 class="reveal">
-                    Professional AI Solutions<br>
-                    <span class="gradient-text">for Modern Businesses</span>
-                </h1>
-                <p class="hero-subtitle reveal">
-                    Content writing, WhatsApp automation, social media management, resume optimization, web scraping, and custom chatbots — all AI-powered, delivered within hours. No subscriptions. Pay per use.
-                </p>
-                <div class="hero-actions reveal">
-                    <a href="#pricing" class="btn btn-primary btn-lg">See Pricing</a>
-                    <a href="https://wa.me/919589644642?text=Hi%20VibeShow!%20I%20want%20to%20know%20more%20about%20your%20services." target="_blank" class="btn btn-ghost btn-lg">
-                        <span class="whatsapp-icon">💬</span> Chat on WhatsApp
-                    </a>
-                </div>
-                <div class="hero-stats reveal">
-                    <div class="stat-item">
-                        <span class="stat-num" data-target="50">50</span><span class="stat-plus">+</span>
-                        <span class="stat-lbl">Clients Served</span>
+    <main>
+        <section class="hero" id="hero">
+            <div class="container hero-layout">
+                <div class="hero-content">
+                    <div class="hero-badge reveal">Trusted by Businesses Across India</div>
+                    <h1 class="reveal">
+                        Professional AI Solutions<br>
+                        <span class="text-accent">for Modern Businesses</span>
+                    </h1>
+                    <p class="hero-subtitle reveal">
+                        Content writing, WhatsApp automation, social media management, resume optimization, web scraping, and custom chatbots — all AI-powered, delivered within hours. No subscriptions. Pay per use.
+                    </p>
+                    <div class="hero-actions reveal">
+                        <a href="#pricing" class="btn btn-primary btn-lg">See Pricing</a>
+                        <a href="https://wa.me/919589644642?text=Hi%20VibeShow!%20I%20want%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener" class="btn btn-secondary btn-lg">Chat on WhatsApp</a>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-num" data-target="500">500</span><span class="stat-plus">+</span>
-                        <span class="stat-lbl">Projects Done</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-num" data-target="4">4</span><span class="stat-plus">hr</span>
-                        <span class="stat-lbl">Avg Delivery</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">What We Do</span>
-                <h2>Services That <span class="gradient-text">Grow Your Business</span></h2>
-                <p>Every service is AI-accelerated, quality-checked, and delivered fast. No BS, no long contracts.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card reveal delay-1">
-                    <div class="card-icon-wrap">
-                        <span class="card-icon">✍️</span>
-                    </div>
-                    <h3>AI Content Writing</h3>
-                    <p>SEO-optimized blog posts, product descriptions, website copy — all plagiarism-free and delivered same day.</p>
-                    <ul class="card-features">
-                        <li>1000+ words per article</li>
-                        <li>SEO keyword optimized</li>
-                        <li>Plagiarism-free guaranteed</li>
-                        <li>Same-day delivery</li>
-                    </ul>
-                </div>
-                <div class="service-card featured reveal delay-2">
-                    <div class="card-badge">Popular</div>
-                    <div class="card-icon-wrap">
-                        <span class="card-icon">📱</span>
-                    </div>
-                    <h3>WhatsApp Auto-Reply</h3>
-                    <p>24/7 AI assistant for your business WhatsApp. Answers customer questions automatically — works on any number.</p>
-                    <ul class="card-features">
-                        <li>Instant auto-replies</li>
-                        <li>Trained on your business</li>
-                        <li>Works on any phone number</li>
-                        <li>Monthly updates included</li>
-                    </ul>
-                </div>
-                <div class="service-card reveal delay-3">
-                    <div class="card-icon-wrap">
-                        <span class="card-icon">📸</span>
-                    </div>
-                    <h3>Social Media Pack</h3>
-                    <p>30 days of scroll-stopping content for Instagram, Facebook & LinkedIn. Captions, hashtags & images included.</p>
-                    <ul class="card-features">
-                        <li>30 ready-to-post images</li>
-                        <li>30 captions + hashtags</li>
-                        <li>Instagram + Facebook + LinkedIn</li>
-                        <li>Delivered in 48 hours</li>
-                    </ul>
-                </div>
-                <div class="service-card reveal delay-1">
-                    <div class="card-icon-wrap">
-                        <span class="card-icon">📄</span>
-                    </div>
-                    <h3>Resume Optimization</h3>
-                    <p>ATS-friendly resume that actually passes screening. Includes cover letter and one free revision round.</p>
-                    <ul class="card-features">
-                        <li>ATS keyword optimized</li>
-                        <li>Professional formatting</li>
-                        <li>Cover letter included</li>
-                        <li>1 revision free</li>
-                    </ul>
-                </div>
-                <div class="service-card reveal delay-2">
-                    <div class="card-icon-wrap">
-                        <span class="card-icon">🔍</span>
-                    </div>
-                    <h3>Web Scraping</h3>
-                    <p>Extract competitor prices, leads, property listings, product catalogs — any website, clean CSV output.</p>
-                    <ul class="card-features">
-                        <li>Clean CSV/Excel output</li>
-                        <li>Any website supported</li>
-                        <li>Recurring updates available</li>
-                        <li>Data validation included</li>
-                    </ul>
-                </div>
-                <div class="service-card reveal delay-3">
-                    <div class="card-icon-wrap">
-                        <span class="card-icon">🤖</span>
-                    </div>
-                    <h3>Custom AI Chatbot</h3>
-                    <p>Full website chatbot trained on your business data. Embed widget, instant deploy, 24/7 availability.</p>
-                    <ul class="card-features">
-                        <li>Website embed widget</li>
-                        <li>Trained on your data</li>
-                        <li>24/7 availability</li>
-                        <li>Free 7-day trial</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="why-us">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Why Us</span>
-                <h2>Why Businesses <span class="gradient-text">Choose Us</span></h2>
-            </div>
-            <div class="why-grid">
-                <div class="why-card reveal delay-1">
-                    <div class="why-icon">⚡</div>
-                    <h3>Delivery in Hours</h3>
-                    <p>Most orders delivered within 4 hours. Urgent? We can do 1 hour turnaround.</p>
-                </div>
-                <div class="why-card reveal delay-2">
-                    <div class="why-icon">🎯</div>
-                    <h3>AI + Human Quality</h3>
-                    <p>We use AI for speed and a human eye for quality. Every output is reviewed before delivery.</p>
-                </div>
-                <div class="why-card reveal delay-3">
-                    <div class="why-icon">💰</div>
-                    <h3>Pay Per Use</h3>
-                    <p>No subscriptions, no monthly fees. You pay only for what you order. ₹99 to start.</p>
-                </div>
-                <div class="why-card reveal delay-1">
-                    <div class="why-icon">🔄</div>
-                    <h3>Free Revisions</h3>
-                    <p>Not happy? We revise it for free. Your satisfaction is built into every service.</p>
-                </div>
-                <div class="why-card reveal delay-2">
-                    <div class="why-icon">🔒</div>
-                    <h3>100% Original</h3>
-                    <p>Every piece of content is original and plagiarism-free. We don't copy-paste.</p>
-                </div>
-                <div class="why-card reveal delay-3">
-                    <div class="why-icon">📞</div>
-                    <h3>WhatsApp Support</h3>
-                    <p>Order, track, and receive everything over WhatsApp. No apps to install. No portals to check.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works / 3 Steps -->
-    <section class="steps" id="steps">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">How It Works</span>
-                <h2>Three Simple <span class="gradient-text">Steps</span></h2>
-                <p>From order to delivery in hours. No meetings, no calls, no complicated forms.</p>
-            </div>
-            <div class="steps-grid">
-                <div class="step-card reveal delay-1">
-                    <div class="step-number">1</div>
-                    <div class="step-icon">📱</div>
-                    <h3>Tell Us on WhatsApp</h3>
-                    <p>Send us a message on WhatsApp. Tell us what you need — one article, a full month of posts, a resume, or a chatbot setup.</p>
-                </div>
-                <div class="step-connector reveal delay-1">
-                    <span>→</span>
-                </div>
-                <div class="step-card reveal delay-2">
-                    <div class="step-number">2</div>
-                    <div class="step-icon">⚡</div>
-                    <h3>We Deliver in Hours</h3>
-                    <p>Our AI team gets to work. Most orders delivered within 4 hours. Urgent? We can do 1-hour turnaround.</p>
-                </div>
-                <div class="step-connector reveal delay-2">
-                    <span>→</span>
-                </div>
-                <div class="step-card reveal delay-3">
-                    <div class="step-number">3</div>
-                    <div class="step-icon">✅</div>
-                    <h3>Review & Pay</h3>
-                    <p>You check the work. If you're happy, pay via UPI. No upfront payment needed — we trust you to pay when you're satisfied.</p>
-                </div>
-            </div>
-            <div class="steps-cta reveal">
-                <a href="https://wa.me/919589644642?text=Hi%20VibeShow!%20I%20want%20to%20order%20a%20service.%20Tell%20me%20how%20it%20works." target="_blank" class="btn btn-primary btn-lg">
-                    Start Now — Free Quote →
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials / Social Proof -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Client Love</span>
-                <h2>What Our Clients <span class="gradient-text">Say</span></h2>
-                <p>Real reviews from real clients. Every project gets a review — here's what people are saying.</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card reveal delay-1">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Got my blog post in 3 hours. Content was better than what my regular writer charges ₹2000 for. Unreal value."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">R</div>
-                        <div>
-                            <div class="testimonial-name">Rahul M.</div>
-                            <div class="testimonial-role">E-commerce Store Owner, Delhi</div>
+                    <div class="hero-stats reveal" aria-label="VibeShow statistics">
+                        <div class="stat-item">
+                            <span><span class="stat-num" data-target="50">50</span><span class="stat-plus">+</span></span>
+                            <span class="stat-lbl">Clients Served</span>
+                        </div>
+                        <div class="stat-item">
+                            <span><span class="stat-num" data-target="500">500</span><span class="stat-plus">+</span></span>
+                            <span class="stat-lbl">Projects Done</span>
+                        </div>
+                        <div class="stat-item">
+                            <span><span class="stat-num" data-target="4">4</span><span class="stat-plus">hr</span></span>
+                            <span class="stat-lbl">Avg Delivery</span>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card reveal delay-2">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"The WhatsApp auto-reply bot saved me hours every day. My customers think I hired a support team. Best ₹999 I've spent."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar" style="background:linear-gradient(135deg,#00d4aa,#00a88a)">P</div>
-                        <div>
-                            <div class="testimonial-name">Priya S.</div>
-                            <div class="testimonial-role">Real Estate Agent, Mumbai</div>
-                        </div>
+                <div class="hero-panel reveal delay-2" aria-hidden="true">
+                    <div class="panel-header">
+                        <span></span><span></span><span></span>
                     </div>
-                </div>
-                <div class="testimonial-card reveal delay-3">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"30 days of Instagram posts ready in 2 days. My engagement literally tripled. Already ordered my second pack."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar" style="background:linear-gradient(135deg,#7c5cfc,#a88cff)">A</div>
-                        <div>
-                            <div class="testimonial-name">Arun K.</div>
-                            <div class="testimonial-role">Cafe Owner, Jaipur</div>
-                        </div>
+                    <div class="panel-row strong">
+                        <span>Active order</span>
+                        <strong>Social Pack</strong>
                     </div>
-                </div>
-                <div class="testimonial-card reveal delay-1">
-                    <div class="testimonial-stars">★★★★☆</div>
-                    <p class="testimonial-text">"Resume rewrite was spot on. Got a call from Amazon within a week. The ATS optimization clearly works."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar" style="background:linear-gradient(135deg,#fd79a8,#e84368)">S</div>
-                        <div>
-                            <div class="testimonial-name">Sneha P.</div>
-                            <div class="testimonial-role">Software Engineer, Bangalore</div>
-                        </div>
+                    <div class="panel-metric">
+                        <span>Delivery window</span>
+                        <strong>48 hours</strong>
                     </div>
-                </div>
-                <div class="testimonial-card reveal delay-2">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Web scraping saved me days of manual work. Got competitor pricing data cleaned and delivered in CSV. Will order again."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar" style="background:linear-gradient(135deg,#fdcb6e,#e17055)">V</div>
-                        <div>
-                            <div class="testimonial-name">Vikram R.</div>
-                            <div class="testimonial-role">Market Researcher, Pune</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card reveal delay-3">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Product descriptions for my entire catalog done in one day. ₹49 each and they're better than what I was paying ₹200 for."</p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar" style="background:linear-gradient(135deg,#74b9ff,#0984e3)">N</div>
-                        <div>
-                            <div class="testimonial-name">Neha G.</div>
-                            <div class="testimonial-role">Shopify Store Owner, Kolkata</div>
-                        </div>
+                    <div class="panel-progress"><span></span></div>
+                    <div class="panel-list">
+                        <div><span>✓</span> Captions drafted</div>
+                        <div><span>✓</span> Hashtags refined</div>
+                        <div><span>•</span> Images in review</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Live Social Proof Bar -->
-    <section class="live-bar">
-        <div class="container">
-            <div class="live-bar-inner reveal">
-                <div class="live-item pulse">
-                    <span class="live-dot"></span>
-                    <span>12 people ordered this week</span>
+        <section class="services section-alt" id="services">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">What We Do</span>
+                    <h2>Services That <span class="text-accent">Grow Your Business</span></h2>
+                    <p>Every service is AI-accelerated, quality-checked, and delivered fast. No BS, no long contracts.</p>
                 </div>
-                <div class="live-item">
-                    <span>⭐ 4.9 average rating (100+ reviews)</span>
-                </div>
-                <div class="live-item">
-                    <span>✅ 98% satisfaction rate</span>
-                </div>
-                <div class="live-item">
-                    <span>⚡ Avg delivery: 3.2 hours</span>
+                <div class="services-grid">
+                    <article class="service-card reveal delay-1">
+                        <div class="card-icon-wrap"><span class="card-icon">✍️</span></div>
+                        <h3>AI Content Writing</h3>
+                        <p>SEO-optimized blog posts, product descriptions, website copy — all plagiarism-free and delivered same day.</p>
+                        <ul class="card-features">
+                            <li>1000+ words per article</li>
+                            <li>SEO keyword optimized</li>
+                            <li>Plagiarism-free guaranteed</li>
+                            <li>Same-day delivery</li>
+                        </ul>
+                    </article>
+                    <article class="service-card featured reveal delay-2">
+                        <div class="card-badge">Popular</div>
+                        <div class="card-icon-wrap"><span class="card-icon">📱</span></div>
+                        <h3>WhatsApp Auto-Reply</h3>
+                        <p>24/7 AI assistant for your business WhatsApp. Answers customer questions automatically — works on any number.</p>
+                        <ul class="card-features">
+                            <li>Instant auto-replies</li>
+                            <li>Trained on your business</li>
+                            <li>Works on any phone number</li>
+                            <li>Monthly updates included</li>
+                        </ul>
+                    </article>
+                    <article class="service-card reveal delay-3">
+                        <div class="card-icon-wrap"><span class="card-icon">📸</span></div>
+                        <h3>Social Media Pack</h3>
+                        <p>30 days of scroll-stopping content for Instagram, Facebook & LinkedIn. Captions, hashtags & images included.</p>
+                        <ul class="card-features">
+                            <li>30 ready-to-post images</li>
+                            <li>30 captions + hashtags</li>
+                            <li>Instagram + Facebook + LinkedIn</li>
+                            <li>Delivered in 48 hours</li>
+                        </ul>
+                    </article>
+                    <article class="service-card reveal delay-1">
+                        <div class="card-icon-wrap"><span class="card-icon">📄</span></div>
+                        <h3>Resume Optimization</h3>
+                        <p>ATS-friendly resume that actually passes screening. Includes cover letter and one free revision round.</p>
+                        <ul class="card-features">
+                            <li>ATS keyword optimized</li>
+                            <li>Professional formatting</li>
+                            <li>Cover letter included</li>
+                            <li>1 revision free</li>
+                        </ul>
+                    </article>
+                    <article class="service-card reveal delay-2">
+                        <div class="card-icon-wrap"><span class="card-icon">🔍</span></div>
+                        <h3>Web Scraping</h3>
+                        <p>Extract competitor prices, leads, property listings, product catalogs — any website, clean CSV output.</p>
+                        <ul class="card-features">
+                            <li>Clean CSV/Excel output</li>
+                            <li>Any website supported</li>
+                            <li>Recurring updates available</li>
+                            <li>Data validation included</li>
+                        </ul>
+                    </article>
+                    <article class="service-card reveal delay-3">
+                        <div class="card-icon-wrap"><span class="card-icon">🤖</span></div>
+                        <h3>Custom AI Chatbot</h3>
+                        <p>Full website chatbot trained on your business data. Embed widget, instant deploy, 24/7 availability.</p>
+                        <ul class="card-features">
+                            <li>Website embed widget</li>
+                            <li>Trained on your data</li>
+                            <li>24/7 availability</li>
+                            <li>Free 7-day trial</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Our Work / Portfolio -->
-    <section class="works" id="works">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Our Work</span>
-                <h2>Recent <span class="gradient-text">Deliverables</span></h2>
-                <p>Real samples from real orders. Every project is different — here's what we've delivered recently.</p>
-            </div>
-            <div class="works-grid">
-                <div class="work-card reveal delay-1">
-                    <div class="work-badge">Content</div>
-                    <div class="work-body">
-                        <h3>SEO Blog Post</h3>
-                        <p>"How to Start a Dropshipping Business in India (2025 Guide)" — 1500 words, keyword optimized, ₹99.</p>
-                        <a href="https://wa.me/919589644642?text=Hi!%20I%20want%20an%20SEO%20blog%20post%20like%20the%20dropshipping%20sample" target="_blank" class="work-cta">Order Similar →</a>
-                    </div>
+        <section class="why-us">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Why Us</span>
+                    <h2>Why Businesses <span class="text-accent">Choose Us</span></h2>
                 </div>
-                <div class="work-card reveal delay-2">
-                    <div class="work-badge green">Social Media</div>
-                    <div class="work-body">
-                        <h3>30-Day Instagram Pack</h3>
-                        <p>Daily posts with captions + hashtags for a Jaipur cafe. Engagement went up 3x in the first week. ₹499.</p>
-                        <a href="https://wa.me/919589644642?text=Hi!%20I%20want%20a%2030-day%20social%20media%20pack%20like%20the%20cafe%20sample" target="_blank" class="work-cta">Order Similar →</a>
-                    </div>
-                </div>
-                <div class="work-card reveal delay-3">
-                    <div class="work-badge purple">WhatsApp</div>
-                    <div class="work-body">
-                        <h3>Real Estate WhatsApp Bot</h3>
-                        <p>AI assistant that answers property inquiries 24/7 on a real estate agent's WhatsApp. 200+ automated conversations in week 1.</p>
-                        <a href="https://wa.me/919589644642?text=Hi!%20I%20want%20to%20set%20up%20a%20WhatsApp%20AI%20like%20the%20real%20estate%20sample" target="_blank" class="work-cta">Order Similar →</a>
-                    </div>
-                </div>
-                <div class="work-card reveal delay-1">
-                    <div class="work-badge orange">Resume</div>
-                    <div class="work-body">
-                        <h3>ATS-Optimized Resume</h3>
-                        <p>Software engineer resume rewrite. Client got interview call from 3 top-tier companies within 2 weeks. ₹249.</p>
-                        <a href="https://wa.me/919589644642?text=Hi!%20I%20want%20a%20resume%20like%20the%20software%20engineer%20sample" target="_blank" class="work-cta">Order Similar →</a>
-                    </div>
+                <div class="why-grid">
+                    <article class="why-card reveal delay-1"><div class="why-icon">⚡</div><h3>Delivery in Hours</h3><p>Most orders delivered within 4 hours. Urgent? We can do 1 hour turnaround.</p></article>
+                    <article class="why-card reveal delay-2"><div class="why-icon">🎯</div><h3>AI + Human Quality</h3><p>We use AI for speed and a human eye for quality. Every output is reviewed before delivery.</p></article>
+                    <article class="why-card reveal delay-3"><div class="why-icon">💰</div><h3>Pay Per Use</h3><p>No subscriptions, no monthly fees. You pay only for what you order. ₹99 to start.</p></article>
+                    <article class="why-card reveal delay-1"><div class="why-icon">🔄</div><h3>Free Revisions</h3><p>Not happy? We revise it for free. Your satisfaction is built into every service.</p></article>
+                    <article class="why-card reveal delay-2"><div class="why-icon">🔒</div><h3>100% Original</h3><p>Every piece of content is original and plagiarism-free. We don't copy-paste.</p></article>
+                    <article class="why-card reveal delay-3"><div class="why-icon">📞</div><h3>WhatsApp Support</h3><p>Order, track, and receive everything over WhatsApp. No apps to install. No portals to check.</p></article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Pricing -->
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Pricing</span>
-                <h2>Simple. Fair. <span class="gradient-text">No Surprises.</span></h2>
-                <p>What you see is what you pay. No hidden fees, no upsells, no monthly subscriptions unless you want them.</p>
-            </div>
-            <div class="pricing-grid">
-                <div class="pricing-card reveal delay-1">
-                    <h3>AI Article</h3>
-                    <div class="pricing-price">
-                        <span class="price-amount">₹99</span>
-                        <span class="price-period">per article</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>✓ 1000+ words</li>
-                        <li>✓ SEO keyword optimized</li>
-                        <li>✓ Plagiarism-free</li>
-                        <li>✓ Delivered in 4 hours</li>
-                        <li>✓ 1 revision free</li>
-                    </ul>
-                    <a href="https://wa.me/919589644642?text=Hi!%20I%20want%20to%20order%20an%20AI%20article%20(₹99)" target="_blank" class="btn btn-primary btn-block">Order on WhatsApp</a>
+        <section class="steps section-alt" id="steps">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">How It Works</span>
+                    <h2>Three Simple <span class="text-accent">Steps</span></h2>
+                    <p>From order to delivery in hours. No meetings, no calls, no complicated forms.</p>
                 </div>
-                <div class="pricing-card popular reveal delay-2">
-                    <div class="popular-badge">Most Popular</div>
-                    <h3>Social Media Pack</h3>
-                    <div class="pricing-price">
-                        <span class="price-amount">₹499</span>
-                        <span class="price-period">30 posts, one-time</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>✓ 30 ready-to-post images</li>
-                        <li>✓ 30 captions + hashtags</li>
-                        <li>✓ Instagram + Facebook + LinkedIn</li>
-                        <li>✓ Delivered in 48 hours</li>
-                        <li>✓ 1 revision round included</li>
-                    </ul>
-                    <a href="https://wa.me/919589644642?text=Hi!%20I%20want%20the%20Social%20Media%20Pack%20(₹499)" target="_blank" class="btn btn-primary btn-block">Order on WhatsApp</a>
+                <div class="steps-grid">
+                    <article class="step-card reveal delay-1"><div class="step-number">1</div><div class="step-icon">📱</div><h3>Tell Us on WhatsApp</h3><p>Send us a message on WhatsApp. Tell us what you need — one article, a full month of posts, a resume, or a chatbot setup.</p></article>
+                    <div class="step-connector reveal delay-1"><span>→</span></div>
+                    <article class="step-card reveal delay-2"><div class="step-number">2</div><div class="step-icon">⚡</div><h3>We Deliver in Hours</h3><p>Our AI team gets to work. Most orders delivered within 4 hours. Urgent? We can do 1-hour turnaround.</p></article>
+                    <div class="step-connector reveal delay-2"><span>→</span></div>
+                    <article class="step-card reveal delay-3"><div class="step-number">3</div><div class="step-icon">✅</div><h3>Review & Pay</h3><p>You check the work. If you're happy, pay via UPI. No upfront payment needed — we trust you to pay when you're satisfied.</p></article>
                 </div>
-                <div class="pricing-card reveal delay-3">
-                    <h3>WhatsApp Setup</h3>
-                    <div class="pricing-price">
-                        <span class="price-amount">₹999</span>
-                        <span class="price-period">setup + ₹499/mo</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>✓ AI auto-reply setup</li>
-                        <li>✓ Custom trained on your business</li>
-                        <li>✓ Works on your existing number</li>
-                        <li>✓ 1 month free support</li>
-                        <li>✓ Monthly updates & training</li>
-                    </ul>
-                    <a href="https://wa.me/919589644642?text=Hi!%20I%20want%20WhatsApp%20Auto-Reply%20Setup%20(₹999)" target="_blank" class="btn btn-primary btn-block">Order on WhatsApp</a>
+                <div class="steps-cta reveal">
+                    <a href="https://wa.me/919589644642?text=Hi%20VibeShow!%20I%20want%20to%20order%20a%20service.%20Tell%20me%20how%20it%20works." target="_blank" rel="noopener" class="btn btn-primary btn-lg">Start Now — Free Quote →</a>
                 </div>
             </div>
-            <div class="pricing-note reveal">
-                <p><strong>💡 Bulk orders?</strong> Get 15% off on 5+ articles or 3+ social media packs.</p>
-                <p><strong>💳 All payments via UPI</strong> (GPay / PhonePe / PayTM) — instant payment, instant delivery.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- FAQ -->
-    <section class="faq">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">FAQ</span>
-                <h2>Got <span class="gradient-text">Questions?</span></h2>
-                <p>Everything you need to know before ordering.</p>
-            </div>
-            <div class="faq-list reveal">
-                <div class="faq-item active">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        <span>How fast do you deliver?</span>
-                        <span class="faq-arrow">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Most services are delivered within 4 hours. Articles can be done in 2 hours for urgent orders. Social media packs take up to 48 hours. WhatsApp setup takes 1-2 days depending on customization.</p>
-                    </div>
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Client Love</span>
+                    <h2>What Our Clients <span class="text-accent">Say</span></h2>
+                    <p>Real reviews from real clients. Every project gets a review — here's what people are saying.</p>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        <span>How do I pay?</span>
-                        <span class="faq-arrow">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>UPI only. GPay, PhonePe, PayTM, BHIM — any UPI app works. Our UPI ID is <strong>vibeshow@upi</strong>. Pay after reviewing the work. We don't ask for payment upfront.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        <span>Is the content AI-generated?</span>
-                        <span class="faq-arrow">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes and no. We use AI for speed and scale, but every piece of content is reviewed and edited by a human before delivery. You get the best of both — AI speed + human quality.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        <span>Do you offer refunds?</span>
-                        <span class="faq-arrow">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We don't do refunds — we do free unlimited revisions until you're happy. If we genuinely can't deliver what you asked for, we'll tell you upfront and you don't pay anything.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        <span>Can I order bulk?</span>
-                        <span class="faq-arrow">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes! We offer 15% discount on 5+ articles or 3+ social media packs. For bulk custom orders (20+ items), DM us on WhatsApp for a custom quote.</p>
-                    </div>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card reveal delay-1"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Got my blog post in 3 hours. Content was better than what my regular writer charges ₹2000 for. Unreal value."</p><div class="testimonial-author"><div class="testimonial-avatar">R</div><div><div class="testimonial-name">Rahul M.</div><div class="testimonial-role">E-commerce Store Owner, Delhi</div></div></div></article>
+                    <article class="testimonial-card reveal delay-2"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"The WhatsApp auto-reply bot saved me hours every day. My customers think I hired a support team. Best ₹999 I've spent."</p><div class="testimonial-author"><div class="testimonial-avatar">P</div><div><div class="testimonial-name">Priya S.</div><div class="testimonial-role">Real Estate Agent, Mumbai</div></div></div></article>
+                    <article class="testimonial-card reveal delay-3"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"30 days of Instagram posts ready in 2 days. My engagement literally tripled. Already ordered my second pack."</p><div class="testimonial-author"><div class="testimonial-avatar">A</div><div><div class="testimonial-name">Arun K.</div><div class="testimonial-role">Cafe Owner, Jaipur</div></div></div></article>
+                    <article class="testimonial-card reveal delay-1"><div class="testimonial-stars">★★★★☆</div><p class="testimonial-text">"Resume rewrite was spot on. Got a call from Amazon within a week. The ATS optimization clearly works."</p><div class="testimonial-author"><div class="testimonial-avatar">S</div><div><div class="testimonial-name">Sneha P.</div><div class="testimonial-role">Software Engineer, Bangalore</div></div></div></article>
+                    <article class="testimonial-card reveal delay-2"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Web scraping saved me days of manual work. Got competitor pricing data cleaned and delivered in CSV. Will order again."</p><div class="testimonial-author"><div class="testimonial-avatar">V</div><div><div class="testimonial-name">Vikram R.</div><div class="testimonial-role">Market Researcher, Pune</div></div></div></article>
+                    <article class="testimonial-card reveal delay-3"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Product descriptions for my entire catalog done in one day. ₹49 each and they're better than what I was paying ₹200 for."</p><div class="testimonial-author"><div class="testimonial-avatar">N</div><div><div class="testimonial-name">Neha G.</div><div class="testimonial-role">Shopify Store Owner, Kolkata</div></div></div></article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact / CTA -->
-    <section class="cta" id="contact">
-        <div class="container">
-            <div class="cta-card reveal">
-                <h2>Ready to Get Started?</h2>
-                <p>Send us a message on WhatsApp. We respond within 5 minutes.</p>
-                <div class="cta-buttons">
-                    <a href="https://wa.me/919589644642?text=Hi%20VibeShow!%20I%20want%20to%20order%20a%20service." target="_blank" class="btn btn-primary btn-lg">
-                        💬 Start on WhatsApp
-                    </a>
-                    <a href="mailto:support@codemurf.com" class="btn btn-ghost btn-lg">
-                        ✉️ Or Email Us
-                    </a>
+        <section class="live-bar">
+            <div class="container">
+                <div class="live-bar-inner reveal">
+                    <div class="live-item pulse"><span class="live-dot"></span><span>12 people ordered this week</span></div>
+                    <div class="live-item"><span>⭐ 4.9 average rating (100+ reviews)</span></div>
+                    <div class="live-item"><span>✅ 98% satisfaction rate</span></div>
+                    <div class="live-item"><span>⚡ Avg delivery: 3.2 hours</span></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section class="works section-alt" id="works">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Our Work</span>
+                    <h2>Recent <span class="text-accent">Deliverables</span></h2>
+                    <p>Real samples from real orders. Every project is different — here's what we've delivered recently.</p>
+                </div>
+                <div class="works-grid">
+                    <article class="work-card reveal delay-1"><div class="work-badge">Content</div><div class="work-body"><h3>SEO Blog Post</h3><p>"How to Start a Dropshipping Business in India (2025 Guide)" — 1500 words, keyword optimized, ₹99.</p><a href="https://wa.me/919589644642?text=Hi!%20I%20want%20an%20SEO%20blog%20post%20like%20the%20dropshipping%20sample" target="_blank" rel="noopener" class="work-cta">Order Similar →</a></div></article>
+                    <article class="work-card reveal delay-2"><div class="work-badge">Social Media</div><div class="work-body"><h3>30-Day Instagram Pack</h3><p>Daily posts with captions + hashtags for a Jaipur cafe. Engagement went up 3x in the first week. ₹499.</p><a href="https://wa.me/919589644642?text=Hi!%20I%20want%20a%2030-day%20social%20media%20pack%20like%20the%20cafe%20sample" target="_blank" rel="noopener" class="work-cta">Order Similar →</a></div></article>
+                    <article class="work-card reveal delay-3"><div class="work-badge">WhatsApp</div><div class="work-body"><h3>Real Estate WhatsApp Bot</h3><p>AI assistant that answers property inquiries 24/7 on a real estate agent's WhatsApp. 200+ automated conversations in week 1.</p><a href="https://wa.me/919589644642?text=Hi!%20I%20want%20to%20set%20up%20a%20WhatsApp%20AI%20like%20the%20real%20estate%20sample" target="_blank" rel="noopener" class="work-cta">Order Similar →</a></div></article>
+                    <article class="work-card reveal delay-1"><div class="work-badge">Resume</div><div class="work-body"><h3>ATS-Optimized Resume</h3><p>Software engineer resume rewrite. Client got interview call from 3 top-tier companies within 2 weeks. ₹249.</p><a href="https://wa.me/919589644642?text=Hi!%20I%20want%20a%20resume%20like%20the%20software%20engineer%20sample" target="_blank" rel="noopener" class="work-cta">Order Similar →</a></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Pricing</span>
+                    <h2>Simple. Fair. <span class="text-accent">No Surprises.</span></h2>
+                    <p>What you see is what you pay. No hidden fees, no upsells, no monthly subscriptions unless you want them.</p>
+                </div>
+                <div class="pricing-grid">
+                    <article class="pricing-card reveal delay-1"><h3>AI Article</h3><div class="pricing-price"><span class="price-amount">₹99</span><span class="price-period">per article</span></div><ul class="pricing-features"><li>✓ 1000+ words</li><li>✓ SEO keyword optimized</li><li>✓ Plagiarism-free</li><li>✓ Delivered in 4 hours</li><li>✓ 1 revision free</li></ul><a href="https://wa.me/919589644642?text=Hi!%20I%20want%20to%20order%20an%20AI%20article%20(₹99)" target="_blank" rel="noopener" class="btn btn-secondary btn-block">Order on WhatsApp</a></article>
+                    <article class="pricing-card popular reveal delay-2"><div class="popular-badge">Most Popular</div><h3>Social Media Pack</h3><div class="pricing-price"><span class="price-amount">₹499</span><span class="price-period">30 posts, one-time</span></div><ul class="pricing-features"><li>✓ 30 ready-to-post images</li><li>✓ 30 captions + hashtags</li><li>✓ Instagram + Facebook + LinkedIn</li><li>✓ Delivered in 48 hours</li><li>✓ 1 revision round included</li></ul><a href="https://wa.me/919589644642?text=Hi!%20I%20want%20the%20Social%20Media%20Pack%20(₹499)" target="_blank" rel="noopener" class="btn btn-primary btn-block">Order on WhatsApp</a></article>
+                    <article class="pricing-card reveal delay-3"><h3>WhatsApp Setup</h3><div class="pricing-price"><span class="price-amount">₹999</span><span class="price-period">setup + ₹499/mo</span></div><ul class="pricing-features"><li>✓ AI auto-reply setup</li><li>✓ Custom trained on your business</li><li>✓ Works on your existing number</li><li>✓ 1 month free support</li><li>✓ Monthly updates & training</li></ul><a href="https://wa.me/919589644642?text=Hi!%20I%20want%20WhatsApp%20Auto-Reply%20Setup%20(₹999)" target="_blank" rel="noopener" class="btn btn-secondary btn-block">Order on WhatsApp</a></article>
+                </div>
+                <div class="pricing-note reveal">
+                    <p><strong>💡 Bulk orders?</strong> Get 15% off on 5+ articles or 3+ social media packs.</p>
+                    <p><strong>💳 All payments via UPI</strong> (GPay / PhonePe / PayTM) — instant payment, instant delivery.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq section-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">FAQ</span>
+                    <h2>Got <span class="text-accent">Questions?</span></h2>
+                    <p>Everything you need to know before ordering.</p>
+                </div>
+                <div class="faq-list reveal">
+                    <article class="faq-item active"><button class="faq-question" type="button" aria-expanded="true"><span>How fast do you deliver?</span><span class="faq-arrow">+</span></button><div class="faq-answer"><p>Most services are delivered within 4 hours. Articles can be done in 2 hours for urgent orders. Social media packs take up to 48 hours. WhatsApp setup takes 1-2 days depending on customization.</p></div></article>
+                    <article class="faq-item"><button class="faq-question" type="button" aria-expanded="false"><span>How do I pay?</span><span class="faq-arrow">+</span></button><div class="faq-answer"><p>UPI only. GPay, PhonePe, PayTM, BHIM — any UPI app works. Our UPI ID is <strong>vibeshow@upi</strong>. Pay after reviewing the work. We don't ask for payment upfront.</p></div></article>
+                    <article class="faq-item"><button class="faq-question" type="button" aria-expanded="false"><span>Is the content AI-generated?</span><span class="faq-arrow">+</span></button><div class="faq-answer"><p>Yes and no. We use AI for speed and scale, but every piece of content is reviewed and edited by a human before delivery. You get the best of both — AI speed + human quality.</p></div></article>
+                    <article class="faq-item"><button class="faq-question" type="button" aria-expanded="false"><span>Do you offer refunds?</span><span class="faq-arrow">+</span></button><div class="faq-answer"><p>We don't do refunds — we do free unlimited revisions until you're happy. If we genuinely can't deliver what you asked for, we'll tell you upfront and you don't pay anything.</p></div></article>
+                    <article class="faq-item"><button class="faq-question" type="button" aria-expanded="false"><span>Can I order bulk?</span><span class="faq-arrow">+</span></button><div class="faq-answer"><p>Yes! We offer 15% discount on 5+ articles or 3+ social media packs. For bulk custom orders (20+ items), DM us on WhatsApp for a custom quote.</p></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" id="contact">
+            <div class="container">
+                <div class="cta-card reveal">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Send us a message on WhatsApp. We respond within 5 minutes.</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/919589644642?text=Hi%20VibeShow!%20I%20want%20to%20order%20a%20service." target="_blank" rel="noopener" class="btn btn-primary btn-lg">Start on WhatsApp</a>
+                        <a href="mailto:support@codemurf.com" class="btn btn-secondary btn-lg">Email Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo-mark">✦</span>
-                    <span class="logo-text">Vibe<span class="text-accent">Show</span></span>
-                    <p>AI-powered digital services for businesses and entrepreneurs in India. Fast, affordable, and delivered with care.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <a href="#pricing">Content Writing</a>
-                    <a href="#pricing">WhatsApp Setup</a>
-                    <a href="#pricing">Social Media Pack</a>
-                    <a href="#pricing">Resume Help</a>
-                    <a href="#pricing">Web Scraping</a>
-                    <a href="#pricing">AI Chatbot</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <a href="#services">Services</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#steps">How It Works</a>
-                    <a href="#works">Our Work</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <a href="https://wa.me/919589644642">WhatsApp</a>
-                    <a href="mailto:support@codemurf.com">support@codemurf.com</a>
-                    <a href="https://instagram.com/vibeshowforyou">@vibeshowforyou</a>
-                </div>
+                <div class="footer-brand"><span class="logo-mark">✦</span><span class="logo-text">Vibe<span class="text-accent">Show</span></span><p>AI-powered digital services for businesses and entrepreneurs in India. Fast, affordable, and delivered with care.</p></div>
+                <div class="footer-col"><h4>Services</h4><a href="#pricing">Content Writing</a><a href="#pricing">WhatsApp Setup</a><a href="#pricing">Social Media Pack</a><a href="#pricing">Resume Help</a><a href="#pricing">Web Scraping</a><a href="#pricing">AI Chatbot</a></div>
+                <div class="footer-col"><h4>Quick Links</h4><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#steps">How It Works</a><a href="#works">Our Work</a><a href="#contact">Contact</a></div>
+                <div class="footer-col"><h4>Contact</h4><a href="https://wa.me/919589644642">WhatsApp</a><a href="mailto:support@codemurf.com">support@codemurf.com</a><a href="https://instagram.com/vibeshowforyou">@vibeshowforyou</a></div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 VibeShow. All rights reserved. Made with ✦ in India.</p>
-            </div>
+            <div class="footer-bottom"><p>&copy; 2025 VibeShow. All rights reserved. Made with ✦ in India.</p></div>
         </div>
     </footer>
 
-    <!-- Mobile overlay -->
     <div class="mobile-overlay" id="mobileOverlay"></div>
-
     <script src="js/script.js"></script>
 </body>
 </html>
