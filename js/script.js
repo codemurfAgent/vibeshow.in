@@ -104,10 +104,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const startTime = performance.now();
         const startValue = 0;
 
+        // Set to 0 immediately to start from zero
+        el.textContent = '0';
+
         function update(currentTime) {
             const elapsed = currentTime - startTime;
             const progress = Math.min(elapsed / duration, 1);
-            // Ease out cubic
             const eased = 1 - Math.pow(1 - progress, 3);
             const current = Math.floor(eased * target);
             el.textContent = current;
