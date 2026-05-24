@@ -284,47 +284,247 @@ section { padding: 96px 0; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
     .container { width: min(100% - 32px, 1120px); }
-    section { padding: 72px 0; }
-    .hero { padding: 132px 0 78px; }
-    .hero h1 { font-size: 3.15rem; }
-    .hero-actions, .cta-buttons { flex-direction: column; }
-    .hero-actions .btn, .cta-buttons .btn { width: 100%; }
-    .hero-stats { gap: 20px; }
-    .stat-item { flex: 1 1 130px; }
+    .navbar { padding: 14px 0; }
+    .navbar.scrolled { padding: 10px 0; }
+    section { padding: 68px 0; }
+    .section-header { margin-bottom: 34px; }
+    .section-header h2 { font-size: 2.25rem; }
+    .section-header p { font-size: 1rem; }
+
+    .mobile-overlay {
+        background: rgba(15, 23, 42, 0.44);
+        display: block;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 260ms ease;
+    }
+    .mobile-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
     .nav-links {
         align-items: stretch;
         background: #fff;
-        border-left: 1px solid var(--border);
         box-shadow: var(--shadow-lg);
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 12px;
         height: 100vh;
-        padding: 88px 24px 24px;
+        height: 100dvh;
+        justify-content: center;
+        left: 0;
+        opacity: 0;
+        padding: 88px 24px 40px;
+        pointer-events: none;
         position: fixed;
         right: 0;
         top: 0;
-        transform: translateX(105%);
-        transition: transform 240ms ease;
-        width: min(320px, 86vw);
+        transform: translateY(-16px) scale(0.98);
+        transition: opacity 260ms ease, transform 260ms ease, visibility 0s linear 260ms;
+        visibility: hidden;
+        width: 100%;
         z-index: 850;
     }
-    .nav-links.open { transform: translateX(0); }
-    .nav-link { border-radius: 10px; padding: 12px; }
+    .nav-links.open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0) scale(1);
+        transition: opacity 260ms ease, transform 260ms ease, visibility 0s;
+        visibility: visible;
+    }
+    .nav-link,
+    .nav-links .btn {
+        border-radius: 12px;
+        font-size: 1.05rem;
+        justify-content: center;
+        min-height: 52px;
+        padding: 16px;
+        text-align: center;
+        width: 100%;
+    }
     .hamburger { display: flex; position: relative; z-index: 900; }
-    .services-grid, .why-grid, .testimonials-grid, .works-grid { grid-template-columns: 1fr; }
-    .steps-grid { grid-template-columns: 1fr; }
-    .step-connector { justify-content: center; transform: rotate(90deg); }
-    .footer-grid { grid-template-columns: 1fr; }
+
+    .hero { padding: 124px 0 72px; }
+    .hero-layout { gap: 38px; }
+    .hero h1 { font-size: 3.15rem; }
+    .hero-subtitle { font-size: 1.05rem; line-height: 1.7; }
+    .hero-actions,
+    .cta-buttons {
+        flex-direction: column;
+    }
+    .hero-actions .btn,
+    .cta-buttons .btn,
+    .steps-cta .btn {
+        width: 100%;
+    }
+    .hero-stats { gap: 18px; }
+    .stat-item { flex: 1 1 130px; }
+
+    .services-grid,
+    .why-grid,
+    .testimonials-grid,
+    .works-grid,
+    .pricing-grid {
+        gap: 18px;
+        grid-template-columns: 1fr;
+        max-width: none;
+        width: 100%;
+    }
+    .service-card,
+    .why-card,
+    .testimonial-card,
+    .work-card,
+    .pricing-card {
+        padding: 24px;
+        width: 100%;
+    }
+    .service-card p,
+    .why-card p,
+    .step-card p,
+    .work-body p,
+    .testimonial-text,
+    .pricing-features li,
+    .faq-answer p {
+        font-size: 0.98rem;
+    }
+
+    .why-us { padding: 64px 0; }
+    .why-card { text-align: left; }
+
+    .steps-grid {
+        gap: 14px;
+        grid-template-columns: 1fr;
+    }
+    .step-card { padding: 24px; }
+    .step-connector {
+        justify-content: center;
+        min-height: 28px;
+        transform: rotate(90deg);
+    }
+    .steps-cta { margin-top: 28px; }
+
+    .testimonial-card { min-height: auto; }
+    .testimonial-text { line-height: 1.75; }
+    .testimonial-role { font-size: 0.82rem; }
+
+    .work-badge { margin: 20px 20px 0; }
+    .work-body { padding: 16px 20px 22px; }
+
+    .pricing-card.popular,
+    .pricing-card.popular:hover {
+        transform: none;
+    }
+    .price-amount { font-size: 2.55rem; }
+    .pricing-note {
+        padding: 18px;
+        text-align: left;
+    }
+
+    .faq-list { gap: 10px; }
+    .faq-question {
+        font-size: 0.98rem;
+        line-height: 1.35;
+        min-height: 58px;
+        padding: 18px;
+    }
+    .faq-arrow {
+        height: 34px;
+        margin-left: 12px;
+        width: 34px;
+    }
+    .faq-answer p { padding: 0 18px 20px; }
+
+    .cta { padding: 66px 0; }
+    .cta-card { padding: 34px 24px; }
+    .cta-card p { font-size: 1rem; }
+
+    .footer { padding: 46px 0 24px; }
+    .footer-grid {
+        gap: 30px;
+        grid-template-columns: 1fr;
+    }
+    .footer-brand p { max-width: none; }
+    .footer-col a {
+        font-size: 0.96rem;
+        min-height: 36px;
+        padding: 7px 0;
+    }
+
     .whatsapp-float { bottom: 16px; right: 16px; }
 }
 
 @media (max-width: 480px) {
-    .hero h1 { font-size: 2.62rem; }
-    .section-header h2 { font-size: 2rem; }
-    .hero-panel, .pricing-card, .cta-card { padding: 24px; }
+    .container { width: min(100% - 24px, 1120px); }
+    section { padding: 56px 0; }
+    .section-header { margin-bottom: 28px; }
+    .section-header h2 { font-size: 1.95rem; }
+    .section-tag { font-size: 0.7rem; }
+
+    .nav-links { padding: 82px 16px 32px; }
+    .nav-link,
+    .nav-links .btn {
+        font-size: 1rem;
+        min-height: 50px;
+        padding: 15px;
+    }
+
+    .hero { padding: 112px 0 58px; }
+    .hero h1 { font-size: 2.45rem; }
+    .hero-subtitle { font-size: 1rem; }
+    .hero-panel,
+    .service-card,
+    .why-card,
+    .step-card,
+    .testimonial-card,
+    .pricing-card,
+    .cta-card {
+        padding: 22px;
+    }
+    .hero-actions { margin-bottom: 36px; }
+    .hero-stats { display: grid; gap: 14px; grid-template-columns: 1fr; }
+
+    .services-grid,
+    .why-grid,
+    .testimonials-grid,
+    .works-grid,
+    .pricing-grid {
+        gap: 16px;
+    }
+    .card-badge,
+    .popular-badge {
+        font-size: 0.7rem;
+        right: 14px;
+        top: 14px;
+    }
+    .popular-badge {
+        left: 22px;
+        right: auto;
+    }
+    .pricing-card.popular h3 { margin-top: 30px; }
+    .price-amount { font-size: 2.25rem; }
+
+    .work-badge { margin: 18px 18px 0; }
+    .work-body { padding: 14px 18px 20px; }
+
+    .faq-question {
+        align-items: flex-start;
+        font-size: 0.95rem;
+        padding: 16px;
+    }
+    .faq-answer p {
+        font-size: 0.94rem;
+        padding: 0 16px 18px;
+    }
+
+    .cta { padding: 56px 0; }
+    .cta-card h2 { font-size: 1.95rem; }
+    .btn-lg { min-height: 50px; padding: 15px 18px; }
+
+    .footer-grid { gap: 24px; }
+    .footer-bottom { font-size: 0.8rem; }
+
     .whatsapp-float span:last-child { display: none; }
     .whatsapp-float { border-radius: 50%; height: 48px; justify-content: center; padding: 0; width: 48px; }
 }
