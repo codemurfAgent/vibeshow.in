@@ -142,56 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // ---- Copy UPI ----
-    window.copyUPI = function() {
-        const upiId = 'vibeshow@upi';
-        const copyBtn = document.querySelector('.btn-copy');
-
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(upiId).then(() => {
-                showToast('UPI ID copied!');
-                if (copyBtn) {
-                    copyBtn.textContent = 'Copied!';
-                    copyBtn.classList.add('copied');
-                    setTimeout(() => {
-                        copyBtn.textContent = 'Copy';
-                        copyBtn.classList.remove('copied');
-                    }, 2000);
-                }
-            }).catch(() => {
-                fallbackCopy(upiId);
-            });
-        } else {
-            fallbackCopy(upiId);
-        }
-    };
-
-    function fallbackCopy(text) {
-        const textarea = document.createElement('textarea');
-        textarea.value = text;
-        textarea.style.position = 'fixed';
-        textarea.style.opacity = '0';
-        textarea.style.pointerEvents = 'none';
-        document.body.appendChild(textarea);
-        textarea.select();
-        try {
-            document.execCommand('copy');
-            showToast('UPI ID copied!');
-            const copyBtn = document.querySelector('.btn-copy');
-            if (copyBtn) {
-                copyBtn.textContent = 'Copied!';
-                copyBtn.classList.add('copied');
-                setTimeout(() => {
-                    copyBtn.textContent = 'Copy';
-                    copyBtn.classList.remove('copied');
-                }, 2000);
-            }
-        } catch (e) {
-            showToast('UPI ID: vibeshow@upi');
-        }
-        document.body.removeChild(textarea);
-    }
-
     // ---- Toast Notification ----
     let toastTimer = null;
 
